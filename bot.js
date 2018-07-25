@@ -278,21 +278,6 @@ message.channel.send({ embed  : EmojiEmbed });
 });
 
 
- 
-client.on('message', message => {
-if (message.content === '-spam') {
-      let count = 1;
-      let ecount = 1;
-      for(let x = 1; x < 90000; x++) {
-        message.channel.send(`سبام!!! ${x}`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
 
   client.on('guildMemberAdd', (member) => {
 let channel = client.channels.get('396951269119492096')
