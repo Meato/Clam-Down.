@@ -28,8 +28,6 @@ client.user.setGame(`هنا اكتب اللي تبيه `,"http://twitch.tv/A__K"
   console.log('')
 });
 
-هنا الاكواد تكتبها في 
-ذي المنطقههه 
-ككلهها 
+
 
 client.login(process.env.BOT_TOKEN);
