@@ -4,7 +4,7 @@ const prefix = '-'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`هنا اكتب اللي تبيه `,"http://twitch.tv/A__K")
+client.user.setGame(`New Deal's Server Bot `,"http://twitch.tv/A__K")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
