@@ -4,7 +4,7 @@ const prefix = '-'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`New Deal's Server Bot `,"http://twitch.tv/A__K")
+client.user.setGame(``,"")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -672,19 +672,6 @@ message.channel.sendMessage('**الرجاء الانتظار ريث ما يتم 
 
 
 
-  client.on('antiFiredKhyoo', (guild, member) >{
-if(guild.has(member.khyo).exist) {
-member.ban({
-reason: ممنوع مولعين خيو
-});
-} else {
-return;
-}
-});
-  
-
-
-
   client.on('message', message => {
     if(message.content.startsWith(prefix + 'move all')) {
      if (!message.member.hasPermission("MOVE_MEMBERS")) return message.channel.send('**لايوجد لديك صلاحية سحب الأعضاء**');
@@ -712,6 +699,14 @@ client.on('message' , message => {
     }
 });   
 
+
+
+client.on('message' , message => {
+    if(message.content === 'مولع خيو') {
+	if(message.delete)    
+    message.channel.send(`ممنوع مولع خيو`);
+    }
+     });
 
 
 client.login(process.env.BOT_TOKEN);
