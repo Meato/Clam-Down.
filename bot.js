@@ -701,12 +701,17 @@ client.on('message' , message => {
 
 
 
-client.on('message' , message => {
-    if(message.content === 'مولع خيو') {
-	if(message.delete)    
-    message.channel.send(`ممنوع مولع خيو`);
-    }
-     });
+const bannedwords = [
+    "مولع خيو"
+  
+  ];
+
+client.on('message',  message => {
+  if(bannedwords.some(word => message.content.includes(word))) {
+    message.delete()
+    message.reply("ممنوع !").then(msg => {msg.delete(5000)});;
+  };
+});
 
 
 client.login(process.env.BOT_TOKEN);
