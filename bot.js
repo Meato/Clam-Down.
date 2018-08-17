@@ -741,35 +741,7 @@ if (message.content === '!spam') {
 });
 
 
-client.on("message", message => {
-    const myID = "248412206637514753";    
-const command = message.content.split(" ")[0];
 
-    if(command == prefix+"vc"){
-
-
-
-        var member = message.guild.members.get(message.mentions.users.array()[0].id);
-        if(!message.mentions.users){
-            message.reply("please mention the member")
-            return;
-        }
-
-    if(!member.voiceChannel){
-    message.reply("i can't include voice channel for member!")
-    return;
-    }
-              message.guild.createChannel('voicekick', 'voice').then(c => {
-                member.setVoiceChannel(c).then(() => {
-                    c.delete(305).catch(console.log)
-        
-
-
-    
-      });
-     });
-    }
-});
 
 
 
