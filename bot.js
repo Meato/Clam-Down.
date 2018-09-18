@@ -612,11 +612,6 @@ client.on('message', message => {
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setDescription(" ✅    تم ارسال الرابط على الخاص  ")
-      message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
-              const Embed11 = new Discord.RichEmbed()
-        .setColor("RANDOM")
-                .setAuthor(message.guild.name, message.guild.iconURL)
-        .setDescription(`
 **
 
 -${message.guild.name}  Link
