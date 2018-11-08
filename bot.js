@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('ready', async() => {
 var server = "510045258139303946";
-var channel = "510045318860242944";
+var channel = "510192239633498114";
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('Spam ,  Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , Spam , ')
     },305);
